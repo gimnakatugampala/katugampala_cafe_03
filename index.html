@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
+    <link type="image/jpg" href="img/cup.jpg" rel="icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Katugampala Cafe</title>
+</head>
+<body>
+    <div class="bg-image"></div>
+    <h1>Katugampala Cafe</h1>
+    <div class="content">
+        <form id="add-cafe-form">
+            <input type="text" name="name" placeholder="Enter Name">
+            <input type="text" name="city" placeholder="Enter City">
+            <button>Submit Cafe</button>
+
+            <ul id="add-cafe"></ul>
+        </form>
+    </div>
+    <footer>
+        <p>Copyrights &copy; 2020 Katugampala Cafe</p>
+        <p>A Gimna Katugampala Production</p>
+    </footer>
+
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDTQUybLmyMTbQGsLbHjB0fIYe6wMPqzaA",
+    authDomain: "cafe-app-54b68.firebaseapp.com",
+    databaseURL: "https://cafe-app-54b68.firebaseio.com",
+    projectId: "cafe-app-54b68",
+    storageBucket: "cafe-app-54b68.appspot.com",
+    messagingSenderId: "243680842153",
+    appId: "1:243680842153:web:6989138acd9d20faa9f4b8",
+    measurementId: "G-11RQ7L4YXV"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+
+  const db = firebase.firestore();
+</script>
+<script src="app.js"></script>
+
+</body>
+</html>

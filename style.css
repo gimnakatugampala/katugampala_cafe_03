@@ -1,0 +1,142 @@
+body, html {
+    height: 100%;
+    margin: 0;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .bg-image {
+    /* The image used */
+    background-image: url("img/banner.jpg");
+  
+    /* Add the blur effect */
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  h1{
+      position: absolute;
+      top: 2.5%;
+      left: 25%;
+      font-size: 60px;
+      color: white;
+      margin: 10px;
+      text-shadow: 2px 2px teal;
+  }
+
+
+  .content{
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 0 105px 0 0;
+  }
+
+  input[type=text]{
+    background-color: #f1f1f1;
+    border: none;
+    padding: 15px 10%;
+    border-radius: 28px;
+    margin: 5px;
+  }
+
+  input[type=text]:focus{
+    outline: none;
+    background-color: #ddd;
+    border-bottom: 3px solid #88236f;
+    padding-bottom: 8px;
+    transition: all ease 0.2s;
+  }
+
+  form button{
+    border-radius: 28px 120px 28px 28px;
+    padding: 15px 5%;
+  }
+  
+  form button:hover{
+    opacity: 0.5;
+    font-weight: bold;
+  }
+
+  form button:focus{
+    outline: none;
+  }
+
+  ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  li{
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); 
+    height: 70px;
+    font-size: 20px;
+    border-bottom: 1px solid white;
+    position: relative;
+    padding: 10px;
+  }
+
+  li:nth-child(even){
+    padding: 10px;
+  }
+
+  li span{
+    display: block;
+    position: relative;
+    left: -40%;
+  }
+
+  li span:nth-child(2){
+    margin-top: 6px;
+  }
+
+  li div{
+    position: absolute;
+    top: 0;
+    right: 2.5%;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); 
+    width: 40px;
+    text-align: center;
+    padding: 10px 0;
+    font-weight:  bold;
+    cursor:  pointer;
+    margin-top: 10px;
+}
+
+  footer{
+      text-align: center;
+      color: white;
+      position: absolute;
+      bottom: 0;
+      left: 35%;
+      font-size: 20px;
+      font-weight: bold;
+  }
+
+  footer p{
+      text-shadow: 2px 2px teal;
+  }
+
+ 
